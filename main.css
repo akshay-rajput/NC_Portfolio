@@ -1,0 +1,107 @@
+/* stylesheet for portfolio */
+
+body{
+    color: var(--dark);
+    background-color: var(--light);
+}
+.nav__brand a{
+    font-family: 'Pacifico', sans-serif;
+    font-size: 1.75rem;
+}
+
+.nav__link{
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+
+/* header */
+.intro-name{
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2rem;
+    /* font-family: 'Poppins', sans-serif; */
+}
+.intro-name span{
+    font-weight: bold;
+}
+.intro-role{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.intro-subrole{
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.intro-image{
+    text-align: right;
+}
+
+/* gradients */
+
+.container--widebg{
+    /* background-image: linear-gradient(135deg, rgb(68, 202, 201) 0%,rgb(252, 255, 114) 100%); */
+    /* background-image: linear-gradient(90deg, rgb(247, 14, 199),rgb(24, 34, 250)); */
+    /* background-image: linear-gradient(3deg, rgb(249, 144, 110),rgb(225, 14, 225)); */
+    background: var(--dark);
+    color: var(--light);
+}
+
+/* sections */
+.section-heading{
+    font-size: 2.25rem;
+}
+
+.skill--list{
+    justify-content: space-around;
+}
+.skill--logo{
+    color: var(--dark);
+    margin-bottom: 10px;
+}
+.skill--logo img{
+    height: 75px; 
+    filter: grayscale(1);
+    margin-bottom: 10px;
+    transition: all ease 0.35s;
+}
+.skill--logo img:hover{
+    filter: grayscale(0);
+}
+
+/* projects */
+/* .project--list{
+    
+} */
+.project--card{
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 49%;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    word-wrap: break-word;
+    transition: all ease 0.35s;
+}
+.project--card:hover{
+    border-color: var(--accent);
+}
+
+.project--image img{
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+.project--info{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start;
+    align-items: flex-start; */
+    padding: 10px;
+}
+.project--desc{
+    flex-grow: 1;
+}
