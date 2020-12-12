@@ -1,25 +1,84 @@
 :root{
-    --primary: purple;
-    --light: orchid;
-    --dark: #333;
-    --gray: #ccc;
+    /* --primary: #9191e9;
+    --accent: #da5552;
+    --light: #fdfffc;
+    --dark: #361f27;
+    --gray: #1b4353; */
+    --primary: #33c2b1;
+    --accent: #ee9078;
+    --light: snow;
+    --dark: #264653;
+    --gray: #1b4353;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+.text--gray{
+    color: #ccc;
+}
+.text--muted{
+    color: #aaa !important;
+}
+.text--accent{
+    color: var(--accent) !important;
+}
+.text--primary{
+    color: var(--primary) !important;
+}
+.text--spacing{
+    letter-spacing: 1px;
+}
+.text--spacing-wide{
+    letter-spacing: 2px;
+}
+.text--spacing-widest{
+    letter-spacing: 3px;
+}
+
+/* show/hide */
+@media (max-width: 767px){
+    .hide--mobile{
+        display:none;
+    }
+}
+@media(min-width: 768px){
+    .hide--desktop{
+        display: none;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu Condensed+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 /* font-family: 'Open Sans', sans-serif; */
+
 html{
     font-size: 16px;
     box-sizing: border-box;
 }
 body{
     font-family: 'Open Sans', sans-serif;
-    color: var(--dark);
+    /* color: var(--light); */
     margin: 0;
 }
 
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+} 
+.flex-justify-between
+{
+    justify-content: space-between;
+} 
+.flex-align-center{
+    align-items: center;
+}
+
 /* typography */
+h1, h2, h3, h4, h5{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-weight: 700;
+}
 h1{
     font-size: 2.25rem;
 }
@@ -48,10 +107,16 @@ h5{
     /* width: 100vw; */
     background-color: #ccc;
 }
-
+.full-w{
+    width: 100%;
+}
+.top-border{
+    border-top: 1px dashed #ccc;
+}
 /* links */
 a{
-    color: var(--light);
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: var(--accent);
     text-decoration: none;
     transition: all ease 0.35s;
 }
@@ -85,23 +150,11 @@ ul, ol.list--nostyle{
 
 /* Navbar */
 nav{
-    background: var(--dark);
+    /* background: var(--dark); */
     padding: 10px;
     font-size: 1.25rem;
 }
 
-.flex{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-} 
-.flex-justify-between
-{
-    justify-content: space-between;
-} 
-.flex-align-center{
-    align-items: center;
-}
 
 /* header */
 img{
@@ -122,8 +175,8 @@ img{
     padding-bottom: 0rem;
 }
 .py--1{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 .py--3{
     padding-top: 3rem;
@@ -139,8 +192,8 @@ img{
     padding-right: 0rem;
 }
 .px--1{
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 .px--3{
     padding-left: 3rem;
@@ -157,8 +210,8 @@ img{
     margin-bottom: 0rem;
 }
 .my--1{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 0.51rem;
+    margin-bottom: 0.51rem;
 }
 .my--3{
     margin-top: 3rem;
@@ -174,8 +227,8 @@ img{
     margin-right: 0rem;
 }
 .mx--1{
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 0.51rem;
+    margin-right: 0.51rem;
 }
 .mx--3{
     margin-left: 3rem;
