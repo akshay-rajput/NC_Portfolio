@@ -7,11 +7,51 @@ body{
 .nav__brand a{
     font-family: 'Pacifico', sans-serif;
     font-size: 1.75rem;
+    color: var(--primary);
+}
+.nav__brand a:hover{
+    color: var(--accent);
 }
 
 .nav__link{
     font-size: 1.2rem;
     color: var(--primary);
+    position: relative;
+    overflow: hidden;
+}
+.nav__link.active::before{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 45%;
+    width: 5px;
+    border-radius: 50%;
+    bottom: -8px;
+    background: var(--primary);
+    height: 5px;
+}
+.nav__link.active:hover:before{
+    width: 0px;
+    height: 0px;
+}
+.nav__link::after{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0%;
+    width: 0;
+    bottom: -6px;
+    background: var(--accent);
+    height: 2px;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+.nav__link:hover:after{
+    left: 0;
+    right: auto;
+    width: 100%;
 }
 
 /* header */
@@ -19,6 +59,7 @@ body{
     font-size: 3rem;
     font-weight: 300;
     line-height: 1.2rem;
+    margin-top: 10px;
     /* font-family: 'Poppins', sans-serif; */
 }
 .intro-name span{
@@ -70,10 +111,14 @@ body{
 }
 
 /* projects */
-/* .project--list{
-    
-} */
-.project--card{
+.btn--viewprojects{
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+}
+.btn--viewprojects:hover{
+    color: var(--primary);
+}
+.project--card, .blog--card{
     /* height: 100%; */
     display: flex;
     flex-direction: column;
@@ -102,6 +147,55 @@ body{
     align-items: flex-start; */
     padding: 10px;
 }
+.project--tag{
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    background: var(--light);
+    color: var(--accent);
+}
 .project--desc{
     flex-grow: 1;
+    line-height: 1.5rem;
+}
+.project--card--buttons{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.project--card--buttons .fab,
+.project--card--buttons .fa{
+    font-size: 14px;
+}
+
+.blog--card .btn--primary{
+    background-color: var(--accent);
+    transition: all ease 0.35s;
+}
+.blog--card .btn--primary:hover{
+    background-color: var(--primary);
+}
+
+/* footer */
+.back--to--top{
+    text-align: right;
+    margin-top: 2rem;
+    margin-bottom: 3px;
+    padding: 0px;
+}
+.back--to--top a{
+    padding: 10px;
+    font-size: 1.15rem;
+    background-color: var(--dark);
+}
+.back--to--top a:hover{
+    color: var(--primary);
+}
+.footer--link{
+    font-size: 2rem;
+    margin: 5px;
+    color: var(--primary);
+}
+.footer--link:hover{
+    color: var(--accent);
 }
