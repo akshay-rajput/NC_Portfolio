@@ -96,6 +96,9 @@ h5{
 }
 
 /* containers */
+.site-content{
+    min-height: calc(100vh - 230px);
+}
 .container{
     margin: auto;
     max-width: 962px;
@@ -121,20 +124,25 @@ a{
     transition: all ease 0.35s;
 }
 a:hover{
-    color: var(--primary);
+    color: var(--accent);
 }
 .btn--link{
     padding: 6px 12px;
     border: 1px solid var(--primary);
     border-radius: 4px;
+    transition: all ease 0.35s;
+}
+.btn--link:hover{
+    border-color: var(--primary);
+    color: var(--primary);
 }
 .btn--primary{
     color: white;
     background: var(--primary);
 }
 .btn--primary:hover{
-    background: white;
-    color: var(--primary);
+    background: var(--accent);
+    color: var(--light);
 }
 
 /* lists */

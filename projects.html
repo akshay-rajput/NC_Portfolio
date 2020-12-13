@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akshay | Portfolio</title>
+    <title>Akshay | Projects</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <!-- Navbar + Header section -->
-    <div class="container-fluid container--widebg">
+    <!-- navbar -->
+    <div class="container--widebg">
         <nav class="">
             <div class="container flex flex-justify-between flex-align-center">
                 <div class="nav__brand">
@@ -18,13 +18,13 @@
                 </div>
                 <ul class="list--inline text--spacing my--0">
                     <li class="">
-                        <a href="/index.html" class="nav__link active">
+                        <a href="/index.html" class="nav__link">
                             <span class="fa fa-home hide--desktop"></span>
                             <span class="hide--mobile">Home</span>
                         </a>
                     </li>
                     <li class="mx--3">
-                        <a href="/projects.html" class="nav__link">Projects</a>
+                        <a href="/projects.html" class="nav__link active">Projects</a>
                     </li>
                     <li class="">
                         <a href="/blog.html" class="nav__link">Blog</a>
@@ -32,62 +32,12 @@
                 </ul>
             </div>
         </nav>
-        <header class="container flex flex-justify-between flex-align-center">
-            <div class="intro-text">
-                <h2 class="text--muted text--spacing-wide">Hello,</h2>
-                <h2 class="intro-name text--spacing">I'm <span class="text--accent">Akshay Rajput</span></h2>
-                <p class="intro-role text--spacing">I'm a Frontend developer.</p>
-                <p class="intro-subrole text--gray text--spacing">I'm also into UI/UX.</p>
-            </div>
-            <div class="intro-image">
-                <!-- <img src="/img/code.svg" alt="" class=""> -->
-                <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_d0ibfpce.json" background="transparent"  speed="1"  style="width: 450px;" loop autoplay></lottie-player>
-            </div>
-        </header>
     </div>
 
-    <!-- Skills section -->
-    <div class="container py--3">
-        <h2 class="section-heading my--1">My Skills</h2>
-        <p class="text--muted">A list of languages / frameworks that I've learnt so far.</p>
-        <div class="flex skill--list py--1">
-            <a href="javascript:void(0);" class="skill--logo text--center" title="Vue JS">
-                <img src="/img/vuejs.svg" alt="Vue Js">
-                <p class="my--0">Vue.js</p>
-            </a>
-            <a href="javascript:void(0);" class="skill--logo text--center" title="React JS">
-                <img src="/img/reactjs.svg" alt="Vue Js">
-                <p class="my--0">React.js</p>
-            </a>
-            <a href="javascript:void(0);" class="skill--logo text--center" title="Tailwind CSS">
-                <img src="/img/tailwindcss.svg" alt="Vue Js">
-                <p class="my--0">Tailwind CSS</p>
-            </a>
-            <a href="javascript:void(0);" class="skill--logo text--center" title="Bootstrap">
-                <img src="/img/bootstrap.svg" alt="Vue Js">
-                <p class="my--0">Bootstrap</p>
-            </a>
-            <a href="javascript:void(0);" class="skill--logo text--center" title="Jquery">
-                <img src="/img/jquery.svg" alt="Vue Js">
-                <p class="my--0">Jquery</p>
-            </a>
-        </div>
-    </div>
+    <div class="site-content container py--3">
+        <h2 class="section-heading my--1">My Projects</h2>
+        <p class="text--muted">All of the projects that I've worked on.</p>
 
-    <!-- projects list -->
-    <div class="container top-border py--3">
-        <div class="flex flex-justify-between flex-align-center">
-            <div class="">
-                <h2 class="section-heading my--0">My Projects</h2>
-            </div>
-            <a href="/projects.html" class="btn--viewprojects">
-                View all 
-                <span class="fa fa-angle-right"></span>
-            </a>
-            <div class="full-w">
-                <p class="text--muted">Some of my featured projects.</p>
-            </div>
-        </div>
         <div class="project--list my--1 flex flex-justify-between">
 
             <div class="project--card">
@@ -162,72 +112,51 @@
                 </div>
             </div>
 
-        </div>
-    </div>
 
-    <!-- blogs -->
-    <div class="container top-border py--3">
-        <div class="flex flex-justify-between flex-align-center">
-            <div class="">
-                <h2 class="section-heading my--0">My Blog</h2>
-            </div>
-            <a href="/blogs.html" class="btn--viewprojects">
-                View All <span class="fa fa-angle-right"></span>
-            </a>
-            <div class="full-w">
-                <p class="text--muted">My latest blogs are featured here.</p>
-            </div>
         </div>
-        <div class="blog--list my--1 flex flex-justify-between">
-            <div class="blog--card">
-                <div class="project--info">
-                    <h3 class="my--1 text--spacing">How to create underline effect using css pseudo-elements like ::before and ::after?</h3>
-                    <div class="project--tags py--1 flex">
-                        <small class="project--tag">
-                            CSS
-                        </small>
-                        <small class="project--tag">
-                            Psuedo elements
-                        </small>
-                        <small class="project--tag">
-                            Hover effects
-                        </small>
-                    </div>
-                    <div class="project--desc py--1">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, repudiandae aperiam. Minus assumenda modi aspernatur ducimus aperiam, cupiditate ratione vitae delectus! Odit, molestiae quam eum quia corrupti pariatur odio vel?
-                    </div>
-                    <div class="project--card--buttons">
-                        <a href="" class="btn--link btn--primary">
-                            <span class="fa fa-eye"></span>&nbsp; View blog
-                        </a>
-                    </div>
-                </div>
-            </div>
 
-            <div class="blog--card">
-                <div class="project--info">
-                    <h3 class="my--1 text--spacing">Getting started with tailwindcss in your npm project.</h3>
-                    <div class="project--tags py--1 flex">
-                        <small class="project--tag">
-                            TailwindCss
-                        </small>
-                        <small class="project--tag">
-                            SCSS
-                        </small>
-                    </div>
-                    <div class="project--desc py--1">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, repudiandae aperiam. Minus assumenda modi aspernatur ducimus aperiam, cupiditate ratione vitae delectus! Odit, molestiae quam eum quia corrupti pariatur odio vel?
-                    </div>
-                    <div class="project--card--buttons">
-                        <a href="" class="btn--link btn--primary">
-                            <span class="fa fa-eye"></span>&nbsp; View blog
-                        </a>
+        <div class="top-border">
+            <h3 class="">Mini Projects</h3>
+            <p class="text--muted">Fun projects made while learning respective language/framework</p>
+
+            <div class="project--list my--1 flex flex-justify between">
+                <div class="project--card">
+                    <!-- <div class="project--image">
+                        <img src="" alt="project image">
+                    </div> -->
+                    <div class="project--info">
+                        <h3 class="my--1">CLI Quiz - Riddler</h3>
+                        <div class="project--tags py--1 flex">
+                            <small class="project--tag">
+                                Javascript
+                            </small>
+                            <small class="project--tag">
+                                Chalk.js
+                            </small>
+                            <small class="project--tag">
+                                readline-sync.js
+                            </small>
+                        </div>
+                        <div class="project--desc py--1">
+                            A CLI hosted on repl.it. Asks a player 15 riddles and marks them accordingly.
+                            Uses chalk library to add styles to terminal and readline-sync to get input from user.
+                            <br> This was a part of <a href="https://neog.camp" target="_blank" class="">Neog.camp's</a> level zero.
+                        </div>
+                        <div class="project--card--buttons">
+                            <a href="" class="btn--link btn--primary">
+                                <span class="fa fa-external-link-alt"></span>&nbsp; Live Project
+                            </a>
+                            <a href="" class="mx--1 btn--link">
+                                <span class="fab fa-github"></span>&nbsp;
+                                 View Source
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+    
     <div class="back--to--top">
         <a href="javascript:void(0);" onclick='window.scrollTo({top: 0, behavior: "smooth"});' class="btn-backtotop">
             To Top &nbsp;
@@ -263,8 +192,5 @@
             </div>
         </div>
     </footer>
-    
-
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
 </html>
