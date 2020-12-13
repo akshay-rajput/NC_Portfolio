@@ -14,11 +14,11 @@
         <nav class="">
             <div class="container flex flex-justify-between flex-align-center">
                 <div class="nav__brand">
-                    <a href="/index.html" class="text--primary">Akshay</a>
+                    <a href="/index.html" class="">Akshay</a>
                 </div>
                 <ul class="list--inline text--spacing my--0">
                     <li class="">
-                        <a href="/index.html" class="nav__link">
+                        <a href="/index.html" class="nav__link active">
                             <span class="fa fa-home hide--desktop"></span>
                             <span class="hide--mobile">Home</span>
                         </a>
@@ -80,7 +80,7 @@
             <div class="">
                 <h2 class="section-heading my--0">My Projects</h2>
             </div>
-            <a href="/projects.html" class="btn-viewprojects">
+            <a href="/projects.html" class="btn--viewprojects">
                 View all 
                 <span class="fa fa-angle-right"></span>
             </a>
@@ -89,13 +89,14 @@
             </div>
         </div>
         <div class="project--list my--1 flex flex-justify-between">
+
             <div class="project--card">
                 <div class="project--image">
-                    <img src="/img/projects/vue_md.png" alt="project screenshot">
+                    <img src="/img/projects/vueshop2.jpg" alt="project image">
                 </div>
                 <div class="project--info">
-                    <h3 class="my--1">My Project Name</h3>
-                    <div class="project--tags py--1 flex flex-justify-between">
+                    <h3 class="my--1">Ecommerce Store</h3>
+                    <div class="project--tags py--1 flex">
                         <small class="project--tag">
                             Vuejs
                         </small>
@@ -110,50 +111,115 @@
                         </small>
                     </div>
                     <div class="project--desc py--1">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ipsam laborum rerum voluptatem vitae. Maxime ad, quidem repellendus reiciendis, nam obcaecati accusantium molestiae mollitia harum consequatur itaque dolorum, sed minus?
+                        Ecommerce-store made with Vuejs, Tailwindcss, Firebase's realtime database and uses JWT tokens for authentication. <br>
+                        It also uses Axios to fetch data from firebase, Vue-router for routing, Vuex for state management.
+                        It's deployed on Netlify.
                     </div>
                     <div class="project--card--buttons">
-                        <a href="" class="">
-                            <span class="fa fa-external-link-alt"></span> Live Project
+                        <a href="" class="btn--link btn--primary">
+                            <span class="fa fa-external-link-alt"></span>&nbsp; Live Project
                         </a>
-                        <a href="" class="">
-                            <span class="fab fa-github"></span>
+                        <a href="" class="mx--1 btn--link">
+                            <span class="fab fa-github"></span>&nbsp;
+                             View Source
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project--card">
+                <div class="project--image">
+                    <img src="/img/projects/vue_md.png" alt="project screenshot">
+                </div>
+                <div class="project--info">
+                    <h3 class="my--1">Markdown Viewer</h3>
+                    <div class="project--tags py--1 flex">
+                        <small class="project--tag">
+                            Vuejs
+                        </small>
+                        <small class="project--tag">
+                            Inkline
+                        </small>
+                        <small class="project--tag">
+                            SCSS
+                        </small>
+                        <small class="project--tag">
+                            Vue-markdown
+                        </small>
+                    </div>
+                    <div class="project--desc py--1">
+                        A web-app to preview your markdown files or markdown code. <br>
+                        You can upload a markdown file or just use online editor to write markdown and check its preview. <br>
+                    </div>
+                    <div class="project--card--buttons">
+                        <a href="" class="btn--link btn--primary">
+                            <span class="fa fa-external-link-alt"></span>&nbsp; Live Project
+                        </a>
+                        <a href="" class="mx--1 btn--link">
+                            <span class="fab fa-github"></span>&nbsp;
                              View Source
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="project--card">
-                <div class="project--image">
-                    <img src="" alt="project image">
-                </div>
+        </div>
+    </div>
+
+    <div class="container top-border py--3">
+        <div class="flex flex-justify-between flex-align-center">
+            <div class="">
+                <h2 class="section-heading my--0">My Blog</h2>
+            </div>
+            <a href="/blogs.html" class="btn--viewprojects">
+                View All <span class="fa fa-angle-right"></span>
+            </a>
+            <div class="full-w">
+                <p class="text--muted">My latest blogs are featured here.</p>
+            </div>
+        </div>
+        <div class="blog--list my--1 flex flex-justify-between">
+            <div class="blog--card">
                 <div class="project--info">
-                    <h3 class="my--1">My Project Name</h3>
-                    <div class="project--tags py--1 flex flex-justify-between">
+                    <h3 class="my--1 text--spacing">How to create underline effect using css pseudo-elements like ::before and ::after?</h3>
+                    <div class="project--tags py--1 flex">
                         <small class="project--tag">
-                            Vuejs
+                            CSS
                         </small>
+                        <small class="project--tag">
+                            Psuedo elements
+                        </small>
+                        <small class="project--tag">
+                            Hover effects
+                        </small>
+                    </div>
+                    <div class="project--desc py--1">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, repudiandae aperiam. Minus assumenda modi aspernatur ducimus aperiam, cupiditate ratione vitae delectus! Odit, molestiae quam eum quia corrupti pariatur odio vel?
+                    </div>
+                    <div class="project--card--buttons">
+                        <a href="" class="btn--link btn--primary">
+                            <span class="fa fa-eye"></span>&nbsp; View blog
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog--card">
+                <div class="project--info">
+                    <h3 class="my--1 text--spacing">Getting started with tailwindcss in your npm project.</h3>
+                    <div class="project--tags py--1 flex">
                         <small class="project--tag">
                             TailwindCss
                         </small>
                         <small class="project--tag">
-                            Firebase DB
-                        </small>
-                        <small class="project--tag">
-                            JWT Auth
+                            SCSS
                         </small>
                     </div>
                     <div class="project--desc py--1">
-                        Lorem, ipsum dolor sit amet consectetur adipisicinium molestiae mollitia harum consequatur itaque dolorum, sed minus?
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, repudiandae aperiam. Minus assumenda modi aspernatur ducimus aperiam, cupiditate ratione vitae delectus! Odit, molestiae quam eum quia corrupti pariatur odio vel?
                     </div>
                     <div class="project--card--buttons">
-                        <a href="" class="">
-                            <span class="fa fa-external-link-alt"></span> Live Project
-                        </a>
-                        <a href="" class="">
-                            <span class="fab fa-github"></span>
-                             View Source
+                        <a href="" class="btn--link btn--primary">
+                            <span class="fa fa-eye"></span>&nbsp; View blog
                         </a>
                     </div>
                 </div>
@@ -161,7 +227,41 @@
         </div>
     </div>
 
-    <div class="my--5 py--5"></div>
+    <div class="back--to--top">
+        <a href="javascript:void(0);" onclick='window.scrollTo({top: 0, behavior: "smooth"});' class="btn-backtotop">
+            To Top &nbsp;
+            <span class="fa fa-angle-double-up"></span>
+        </a>
+    </div>
+    <footer class="container--widebg">
+        <div class="container flex flex-justify-between flex-align-center">
+            <div class="footer-credit my--1">
+                <div class="nav__brand my--1">
+                    <a href="/index.html" class="">Akshay</a>
+                </div>
+            </div>
+            <div class="footer-social my--1">
+                <small class="text--muted">Reach out</small>
+                <ul class="list--inline my--1">
+                    <li class="">
+                        <a href="https://github.com/root-0" class="footer--link" title="My Github Profile">
+                            <span class="fab fa-github"></span>
+                        </a>
+                    </li>
+                    <li class="mx--1">
+                        <a href="https://www.linkedin.com/in/akshay-rajput/" class="footer--link" title="My LinkedIn Profile">
+                            <span class="fab fa-linkedin"></span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="https://www.instagram.com/the.frontend.guy/" class="footer--link" title="My Instagram">
+                            <span class="fab fa-instagram"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
