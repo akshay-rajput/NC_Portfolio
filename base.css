@@ -96,6 +96,9 @@ h5{
 }
 
 /* containers */
+.site-content{
+    min-height: calc(100vh - 230px);
+}
 .container{
     margin: auto;
     max-width: 962px;
