@@ -102,12 +102,13 @@ body{
 }
 .skill--logo img{
     height: 75px; 
-    filter: grayscale(1);
+    filter: grayscale(0);
     margin-bottom: 10px;
     transition: all ease 0.35s;
 }
 .skill--logo img:hover{
-    filter: grayscale(0);
+    filter: grayscale(1);
+    transform: scale(1.2);
 }
 
 /* projects */
