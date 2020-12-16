@@ -120,11 +120,11 @@ body{
     color: var(--primary);
 }
 .project--card, .blog--card{
-    /* height: 100%; */
+    position: relative;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    min-width: 300px;
-    max-width: 49%;
+    min-width: 90%;
     margin-bottom: 20px;
     background-color: white;
     border: 1px solid #ccc;
@@ -177,6 +177,44 @@ body{
     background-color: var(--primary);
 }
 
+/* project card media queries */
+@media(max-width: 440px){
+    .mx--3{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+}
+@media(min-width: 768px){
+    /* .nav .list--inline{
+        margin-left: 5px;
+    } */
+    
+    .project--card{
+        min-width: 300px;
+        max-width: 49%;
+    }
+    .featured.project--card{
+        flex-direction: row;
+        max-width: 100% !important;
+    }
+    .featured.project--card .project--info{
+        padding-left: 30px;
+    }    
+}
+/* mini-projects */
+.project--ribbon{
+    position: absolute;
+    transform: rotate(40deg);
+    background: var(--accent);
+    color: var(--light);
+    padding: 4px;
+    text-align: center;
+    font-size: 0.8rem;
+    width: 150px;
+    top: 12px;
+    right: -50px;
+}
+
 /* footer */
 .back--to--top{
     text-align: right;
@@ -187,10 +225,11 @@ body{
 .back--to--top a{
     padding: 10px;
     font-size: 1.15rem;
+    color: var(--primary);
     background-color: var(--dark);
 }
 .back--to--top a:hover{
-    color: var(--primary);
+    color: var(--accent);
 }
 .footer--link{
     font-size: 2rem;
