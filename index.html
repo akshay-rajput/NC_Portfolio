@@ -46,7 +46,7 @@
             </div>
             <div class="intro-image">
                 <!-- <img src="/img/code.svg" alt="" class=""> -->
-                <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_d0ibfpce.json" background="transparent"  speed="1"  style="width: 450px;" loop autoplay></lottie-player>
+                <lottie-player id="lottie" src="https://assets1.lottiefiles.com/packages/lf20_d0ibfpce.json" background="transparent"  speed="1"  style="width: 450px;" loop autoplay></lottie-player>
             </div>
         </header>
     </div>
@@ -308,5 +308,16 @@
     
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script>
+        var deviceWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+        console.log("device width: ", deviceWidth);
+
+        var animationPlayer = document.getElementById('lottie');
+        
+        // reduce width of animation on mobile
+        if(deviceWidth < 768){
+            animationPlayer.style.width = "95%";
+        }
+    </script>
 </body>
 </html>
