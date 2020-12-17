@@ -58,8 +58,9 @@ body{
 .intro-name{
     font-size: 3rem;
     font-weight: 300;
-    line-height: 1.2rem;
-    margin-top: 10px;
+    line-height: 3rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
     /* font-family: 'Poppins', sans-serif; */
 }
 .intro-name span{
@@ -179,9 +180,27 @@ body{
 
 /* project card media queries */
 @media(max-width: 440px){
+    html{
+        font-size: 14px;
+    }
     .mx--3{
         margin-left: 8px;
         margin-right: 8px;
+    }
+    .skill--logo img{
+        width: 40px;
+    }
+}
+/* tablets */
+@media(min-width: 768px) and (max-width: 992px){
+    .intro-name{
+        font-size: 2rem;
+    }
+    .intro-role{
+        font-size: 1.25rem;
+    }
+    .intro-subrole{
+        font-size: 1rem;
     }
 }
 @media(min-width: 768px){
