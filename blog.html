@@ -40,79 +40,90 @@
 
     <div class="site-content container-fluid">
         <div class="container py--3">
-            <h2 class="section-heading my--1">My Blog</h2>
-            <p class="text--muted">My blog posts are targeted towards people who are new to web development in general.</p>
+            <div class="flex flex-align-center flex-justify-between">
+                <h2 class="section-heading my--1">My Blog</h2>
+                <div class="devto--link">
+                    <a href="https://dev.to/akshay_rajput" title="akshay_rajput's DEV Profile" class="btn--dev">
+                        DEV
+                    </a>
+                </div>
+            </div>
+            <p class="text--muted">My blog posts are targeted towards beginners in web development. You can also read all my blogs on 
+                <a href="https://dev.to/akshay_rajput" title="My Blogs on Dev.to" style="text-decoration: underline;">Dev.to</a> page.
+            </p>
             <div class="blog--list my--1 flex flex-justify-between">
-                <div class="blog--card">
+                <!-- blog 1 -->
+                <div class="blog--page blog--card">
                     <div class="project--info">
-                        <h3 class="my--1 text--spacing">How to create underline effect using css pseudo-elements like ::before and ::after?</h3>
-                        <small class="">16 December 2020</small>
+                        <h3 class="my--1 text--spacing">How to get started with Fetch()?</h3>
+                        <small class="">19 December 2020</small>
                         <div class="project--tags py--1 flex">
                             <small class="project--tag">
-                                CSS
+                                Javascript
                             </small>
                             <small class="project--tag">
-                                Psuedo elements
-                            </small>
-                            <small class="project--tag">
-                                Hover effects
+                                Fetch()
                             </small>
                         </div>
                         <div class="project--desc py--1">
-                            <p class="">
-                                Dummy text: Its function as a filler or as a tool for comparing the visual impression of different typefaces Dummy text is text that is used in the publishing industry or by web designers to occupy the space which will later be filled with 'real' content. This is required when, for example, the final text is not yet available. Dummy text is also known as 'fill text'.
-                            </p>
-                                Rext that is used in the publishing industry or by web designers to occupy the space which will later be filled with 'real' content. This is required when, for example, the final text is not yet available. Dummy text is also known as 'fill text'.
-                            <p class="">
-                                Dummy text: Its function as a filler or as a tool for comparing the visual impression of different typefaces Dummy text is text that is used in the publishing industry or by web designers to occupy the space which will later be filled with 'real' content. This is required when, for example, the final text is not yet available. Dummy text is also known as 'fill text'.
-                                Dummy text: Its function as a filler or as a tool for comparing the visual impression of different typefaces Dummy text is text that is used in the publishing industry or by web designers to occupy the space which will later be filled with 'real' content. This is required when, for example, the final text is not yet available. Dummy text is also known as 'fill text'.
-                            </p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, repudiandae aperiam. Minus assumenda modi aspernatur ducimus aperiam, cupiditate ratione vitae delectus! Odit, molestiae quam eum quia corrupti pariatur odio vel?
-                            
-                            <p class="">
-                                Dummy text: Its function as a filler or as a tool for comparing the visual impression of different typefaces Dummy text is text that is used in the publishing industry or by web designers to occupy the space which will later be filled with 'real' content. This is required when, for example, the final text is not yet available. Dummy text is also known as 'fill text'.
-                                Dummy text: Its function as a filler or as a tool for comparing the visual impression of different typefaces Dummy text is text that is used in the publishing industry or by web designers to occupy the space which will later be filled with 'real' content. This is required when, for example, the final text is not yet available. Dummy text is also known as 'fill text'.
-                            </p>
+                            The Fetch API provides an interface for fetching resources (including across the network). <br> 
+                            For making an request and fetching a response, you need to use the fetch() method that provides an easy, logical way to fetch resources asynchronously across the network. <br>
+                            <small class="">
+                                Example: I'll demonstrate a basic fetch request using a dummy API from Json Placeholder. This dummy API fetches a list of users with associated data.
+                            </small>
+                            <div class="code-box">
+                                <code class="">
+                                    fetch('https://jsonplaceholder.typicode.com/users') <br>
+                                        .then(response => response.json()) <br>
+                                        .then(data => console.log(data)); 
+                                </code>
+                            </div>
                         </div>
-                        <!-- <div class="project--card--buttons">
-                            <a href="" class="btn--link btn--primary">
-                                <span class="fa fa-eye"></span>&nbsp; View blog
+                        <div class="project--card--buttons">
+                            <a href="https://dev.to/akshay_rajput/fetch-the-basics-4fdo" 
+                               target="_blank" rel="noreferrer" class="btn--link btn--primary">
+                                <span class="fa fa-external-link-alt"></span>&nbsp; Read full post
                             </a>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
 
-                <div class="blog--card">
+                <!-- blog 2 -->
+                <div class="blog--page blog--card">
                     <div class="project--info">
-                        <h3 class="my--1 text--spacing">Getting started with tailwindcss in your npm project.</h3>
-                        <small class="">15 December 2020</small>
+                        <h3 class="my--1 text--spacing">How to keep your footer at bottom of the page?</h3>
+                        <small class="">19 December 2020</small>
                         <div class="project--tags py--1 flex">
                             <small class="project--tag">
-                                TailwindCss
+                                flexbox
                             </small>
                             <small class="project--tag">
-                                SCSS
+                                css
+                            </small>
+                            <small class="project--tag">
+                                footer
                             </small>
                         </div>
                         <div class="project--desc py--1">
-                            Dummy text: Its function as a filler or as a tool for comparing the visual impression of different typefaces Dummy text is text that is used in the publishing industry or by web designers to occupy the space which will later be filled with 'real' content. This is required when, for example, the final text is not yet available. Dummy text is also known as 'fill text'.
-                            Dummy text: Its function as a filler or as a tool for comparing the visual impression of different typefaces Dummy text is text that is used in the publishing industry or by web designers to occupy the space which will later be filled with 'real' content. This is required when, for example, the final text is not yet available. Dummy text is also known as 'fill text'.
-                            <p class="">
-                                Dummy text: Its function as a filler or as a tool for comparing the visual impression of different typefaces Dummy text is text that is used in the publishing industry or by web designers to occupy the space which will later be filled with 'real' content. This is required when, for example, the final text is not yet available. Dummy text is also known as 'fill text'.
-                                Dummy text: Its function as a filler or as a tool for comparing the visual impression of different typefaces Dummy text is text that is used in the publishing industry or by web designers to occupy the space which will later be filled with 'real' content. This is required when, for example, the final text is not yet available. Dummy text is also known as 'fill text'.
-                            </p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, repudiandae aperiam. Minus assumenda modi aspernatur ducimus aperiam, cupiditate ratione vitae delectus! Odit, molestiae quam eum quia corrupti pariatur odio vel?
+                            Have you run into this problem where the footer on your site does not stay at the bottom of the page, even if it is the last tag in your html body. 
+                            Especially if you are new to web development, you'll run into this problem. There are ways of making sure your footer stays at bottom, but most of those methods have some kind of caveat.
                             
-                            <p class="">
-                                Dummy text: Its function as a filler or as a tool for comparing the visual impression of different typefaces Dummy text is text that is used in the publishing industry or by web designers to occupy the space which will later be filled with 'real' content. This is required when, for example, the final text is not yet available. Dummy text is also known as 'fill text'.
-                                Dummy text: Its function as a filler or as a tool for comparing the visual impression of different typefaces Dummy text is text that is used in the publishing industry or by web designers to occupy the space which will later be filled with 'real' content. This is required when, for example, the final text is not yet available. Dummy text is also known as 'fill text'.
-                            </p>
+                            <ol style="list-style: disc;">
+                                <li class="">
+                                    Position: absolute (doesn't work when there's more content, you'll realise footer is stuck and your content is scrolling behind it).
+                                </li>
+                                <li class="">
+                                    Position: fixed (use only if you want your footer to be always visible).
+                                </li>
+                            </ol>
+                            There's a way using flexbox which works on device of every size, doesn't require fixed height of navbar or footer, and works without any side-effects.
                         </div>
-                        <!-- <div class="project--card--buttons">
-                            <a href="" class="btn--link btn--primary">
-                                <span class="fa fa-eye"></span>&nbsp; View blog
+                        <div class="project--card--buttons">
+                            <a href="https://dev.to/akshay_rajput/keep-footer-at-bottom-of-page-using-flexbox-4a6f" 
+                               target="_blank" rel="noreferrer" class="btn--link btn--primary">
+                                <span class="fa fa-external-link-alt"></span>&nbsp; Read full post
                             </a>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
