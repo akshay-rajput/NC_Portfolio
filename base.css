@@ -140,6 +140,18 @@ a:hover{
     background: var(--accent);
     color: var(--light);
 }
+.btn--resume{
+    padding: 6px 12px;
+    border: 1px solid var(--primary);
+    border-radius: 4px;
+    color: var(--primary);
+    transition: all ease 0.35s;
+}
+.btn--resume:hover{
+    border-color: var(--accent);
+    background-color: var(--accent);
+    color: var(--light);
+}
 
 /* lists */
 ul, ol.list--nostyle{
