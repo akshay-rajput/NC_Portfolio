@@ -246,9 +246,13 @@ body{
         flex-direction: row;
         max-width: 100% !important;
     }
+    .featured.project--card .project--image{
+        max-width: 50%;
+        border-right: 1px dashed #ccc;
+    }
     .featured.project--card .project--info{
-        padding-left: 30px;
-    }    
+        padding-left: 20px;
+    }  
 }
 /* mini-projects */
 .project--ribbon{
